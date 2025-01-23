@@ -1,7 +1,16 @@
+/*Color Scheme 
+#7D8E61
+#AD9E43
+#D69A28
+#D2852B
+#487357
+#195850
+#091930 */
 * {
 	margin: 0px;
 	padding: 0px;
 }
+/** These rules set the margin and padding of all elements to 0px. The * will apply to every element in the HTML document.  **/
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
