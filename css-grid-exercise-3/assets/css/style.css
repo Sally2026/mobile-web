@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  border: 1px solid #000;
+  gap: 20px;
+  padding: 20px;
+}
+
+header.primary{
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#content{
+  grid-column: 1 / 13;
+  grid-row: 2 / 3;
+  
+}
+
+#blog{
+  grid-column: 5 / 13;
+  grid-row: 1 / 2;
+  background: rgba(0, 0, 0, 0.571);
+}
+
+
+.widget1{
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.widget2{
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.widget3{
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+footer#colophon{
+  grid-column: 1 / 13;
+  grid-row: 3 / 4;
+  background: rgba(0, 0, 0, 0.4);
+}
