@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+main {
+    max-width: 960px;
+    border: 1px solid #000;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+#blog , #secondary{
+    grid-template-rows: 2 fr fr;
+}
+
+ /* #blog{
+    float: left;
+    width: 78.8511%;
+  }
+
+  aside#secondary{
+    float: right;
+    width: 19.1489%;
+    
+  }
