@@ -63,7 +63,7 @@ main{
 
 /*---------------- Media Queries ----------------*/
 
-@media screen and (max-width:320px){
+@media screen and (max-width:600px){
 
   body {
   background-color: #ff09bf;
