@@ -15,9 +15,9 @@
     <nav class="primary">
     <ul>  
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Education</a></li>
+      <li><a href="#experience">Honors and Organization</a></li>
+      <li><a href="#education">Skills</a></li>
      </ul>  
     </nav>
   </header>
@@ -65,24 +65,30 @@
         <li><a itemprop="url" href="my-resume.pdf" download>pdf resume</a></li>
       </ul>
     </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill">HTML</li>
-        <li class="skill">PHP</li>
-        <li class="skill">Java</li>
-        <li class="skill">Scss</li>
-      </ul>
-      
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Bachelor of Arts">BA</abbr> Web Design and Development</h3>
+        <span itemprop="name">University of Arkansas at Little Rock </span> <br>
+        <span itemprop="location" itemscope>Little Rock, AR</span>
+        <span>2023-2026</span>
+      </article>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Associate of Arts">AS</abbr> Associate of Arts Degree on General Education</h3>
+        <span itemprop="name">Arkansas State University Three Rivers </span> <br>
+        <span itemprop="location" itemscope> Malvern, AR</span>
+        <span>2020-2023</span>
+      </article>
     </section>
-    <section id="experience">
-      <h2>Experience</h2>
+
+    <section id="honor-organizations">
+      <h2>Honor and Organizations</h2>
       <!-- current job -->
-      <article class="job">
-        <h3 itemprop="jobTitle">Lead Web Developer</h3>
+      <article class="honor">
+        <h3 itemprop="jobTitle">Honor Society</h3>
         <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Company Name 1</span>
-          <span>February 2010 - Present</span>
+          <span itemprop="name"> Member of Phi Theta Kappa Honor Society</span>
+          <span>May 2022 - Present</span>
           <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <a itemprop="url" href="http://link-to-company.com">Company URL</a>
@@ -124,20 +130,21 @@
         <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
       </article>
     </section>
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
-        <span itemprop="name">University name 1</span>
-        <span itemprop="location" itemscope>Anywhere, USA</span>
-        <span>2005-2007</span>
-      </article>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">Microsoft</li>
+      </ul>
     </section>
   </main>
   <!-- Footer -->
   <footer>
     <div id="copyright">
-      &copy; 2024 Name | <a href="#top">Top</a>
+      &copy; 2025 | Sally Alazab <a href="#top">Top</a>
     </div>
   </footer>
 </body>
