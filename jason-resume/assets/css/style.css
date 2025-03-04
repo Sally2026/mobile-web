@@ -1,10 +1,129 @@
+/* CSS Custom Properties */
+
+:root{
+  --main-bg-color: #ffffff;
+  --first-color: #97A253;
+  --second-color: #D03966;
+  --third-color: #B03257;
+  --fourth-color: #CFCEA0;
+  --fifth-color: #D2A494;
+  --primary-type-color: #000000;
+}
+
+/* ------ Box Sizing -------*/
+
 html {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: inherit;
+}
+
+/* ------ Typography -------*/
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* ------ Fluid Images -------*/
+
+img {
+  max-width: 100%;
+}
   
-  div.bio img{
-    width: 30%;
-  }
+/*div.bio img{
+  width: 30%;
+}*/
+
+/* ------ Utility Classes  -------*/
+.container {
+  max-width: 420px; /* Design Time */
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* ------ Helper Classes -------*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/* ------ Global Styles -------*/
+
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-type-color);
+  line-height: 1.6;
+}
+
+a:link,
+a:visited {
+  color: var(--primary-type-color);
+}
+
+nav {
+  padding: 1px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--second-color);
+  transition: background-color 0.5s ease;
+  color: #ffffff;
+}
+
+nav a:hover {
+  background: rgba(13, 1, 44, 0.95);
+}
+
+main {
+  padding: 1px 20px;
+}
+
+main h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+main h1:before,
+main h1:after {
+  background-color: var(--second-color);
+  content: "\a0";
+  flex-grow: 1;
+  height: 2px;
+  position: relative;
+  top: 1.6rem;
+}
+main h1:before {
+  margin-right: 5px;
+}
+main h1:after {
+  margin-left: 5px;
+}
