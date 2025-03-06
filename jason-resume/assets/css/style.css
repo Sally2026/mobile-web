@@ -38,7 +38,7 @@ img {
 .container {
   max-width: 420px; /* Design Time */
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(241, 156, 156, 0.267);
 }
 
 /* ------ Helper Classes -------*/
@@ -127,3 +127,127 @@ main h1:before {
 main h1:after {
   margin-left: 5px;
 }
+
+dl {
+  display: grid;
+  /*shorthand*/
+  grid-template: repeat(8, auto) / 8em 1fr;
+  font-size:.9rem;
+}
+
+dt {
+  font-weight: 800;
+  grid-column: 1;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--second-color);
+}
+
+dd {
+  margin: 0;
+  grid-column: 2;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--second-color);
+  text-align: center;
+}
+
+.related-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap:20px;
+}
+
+.related-links a {
+  border: 1px solid var(--second-color);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--second-color);
+  transition: background-color 0.5s ease;
+  color: #fff;
+}
+
+.related-links .svg-inline--fa {
+  font-size: 1.8em;
+  padding-top: 7px;
+}
+
+.related-links a:hover {
+  background: rgba(13, 1, 44, 0.95);
+}
+
+#skills li {
+  list-style-type: square;
+}
+
+.job li{
+  list-style-type: square;
+}
+
+.award li{
+  list-style-type: square;
+}
+
+.job,
+#education,
+#honor-organizations{
+  border-bottom: 1px solid var(--second-color);
+  padding-bottom: 20px;
+}
+
+.job, .certificate, #honor-organizations, .award{
+  display: block;
+}
+
+.job a:link, .job a:visited {
+  color: var(--second-color);
+}
+
+.job h3 {
+  margin: 20px 0 0 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a:link, footer a:visited {
+  color: var(--second-color);
+}
+
+.page-title {
+  grid-area: title;
+}
+#about {
+  grid-area: about;
+}
+#skills {
+  grid-area: skills;
+}
+#experience {
+  grid-area: experience;
+}
+#education {
+  grid-area: education;
+}
+
+main.container{
+  display:grid;
+  grid-template-areas:
+    "title"
+    "about"
+    "skills"
+    "education"
+    "experience"
+    ;
+}
+
+
+
+
+
