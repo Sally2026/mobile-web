@@ -268,50 +268,50 @@ main.container{
 
 /* ------ Media Queries -------*/
 
-@media screen and (min-width:768px){
-  
-  header.container{
-    max-width:900px;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
 
-  main.container{
-    max-width:900px;
-    grid-template-columns: 36.5% auto;  
+  main.container {
+    max-width: 900px;
+    grid-template-columns: 36.5% auto;
     grid-template-areas:
       "title education"
       "about experience"
-      "skills education"
       "skills honor-organizations"
-      "skills honor-awards"
-      ;  
-    } 
-    
-  #about{
-    display:grid;
-    gap:2em;
-    grid-template-columns: 300px 1fr auto;
+      "skills honor-awards";
+  }
+
+  #skills {
+    grid-area: skills;
+    grid-row: span 2;
+  }
+
+  #about {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 200px 1fr auto;
     grid-template-areas:
-      "bio details details"
+      "bio bio bio"
+      "details details details"
       "related related related";
   }
-  .bio{
-    grid-area:bio;
-  }
-  .details{
-    grid-area:details;
-  }
-    
-   .related-links{
-    grid-area:related;
-    border-bottom:1px solid #999;
-    padding-bottom:50px
-  } 
 
-    
- 
-      
-      
-    }
+  .bio {
+    grid-area: bio;
+  }
+
+  .details {
+    grid-area: details;
+  }
+
+  .related-links {
+    grid-area: related;
+    border-bottom: 1px solid #999;
+    padding-bottom: 50px;
+  }
+}
     
   
 
