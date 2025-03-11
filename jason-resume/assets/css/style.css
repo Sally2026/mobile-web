@@ -278,15 +278,13 @@ main.container{
     grid-template-columns: 36.5% auto;
     grid-template-areas:
       "title education"
-      "about experience"
+      "skills experience"
       "skills honor-organizations"
       "skills honor-awards";
+      
   }
 
-  #skills {
-    grid-area: skills;
-    grid-row: span 2;
-  }
+  
 
   #about {
     display: grid;
@@ -296,6 +294,8 @@ main.container{
       "bio bio bio"
       "details details details"
       "related related related";
+
+    background-color: #ffffff;
   }
 
   .bio {
@@ -314,6 +314,26 @@ main.container{
 }
     
   
+
+/*----------------------Edge Case Tweaks-----------------------*/
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
+}
+
+@media only screen and (max-width: 395px) {
+
+.related-links{
+  flex-direction:column;
+}
+  
+.related-links a{
+  display:block;
+}  
+  
+.related-links li a svg{display:inline-block;}
+}
 
 
 
