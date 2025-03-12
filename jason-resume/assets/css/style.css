@@ -236,81 +236,89 @@ footer a:link, footer a:visited {
   grid-area: title;
 }
 
+.bio {
+  grid-area: bio;
+}
+
+#about {
+  grid-area: about;
+}
+
 #skills {
   grid-area: skills;
 }
-#experience {
-  grid-area: experience;
-}
-#education {
-  grid-area: education;
-}
+
 #honor-organizations {
   grid-area: honor-organizations;
 }
-#honor-awards {
-  grid-area: honor-awards;
+
+#info {
+  grid-area: info;
 }
 
+
 main.container{
+  border: 1px solid black;
+  padding: 20px; 
+  margin: 20px auto; 
+  border-radius: 10px; 
   display:grid;
   grid-template-areas:
     "title"
+    "bio"
     "about"
     "skills"
-    "education"
-    "experience"
-    "honor-organizations"
-    "honor-awards"
-    ;
+    "info"
 }
 
 
 /* ------ Media Queries -------*/
 
 @media screen and (min-width: 768px) {
-  .container {
+  header.container {
     max-width: 900px;
   }
+
 
   main.container {
     max-width: 900px;
     grid-template-columns: 36.5% auto;
+    gap: 20px;
     grid-template-areas:
-      "title education"
-      "skills experience"
-      "skills honor-organizations"
-      "skills honor-awards";
+      "about info"
+      "skills info"
+      "honor-organizations info";
       
   }
 
-  
-
-  #about {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 200px 1fr auto;
-    grid-template-areas:
-      "bio bio bio"
-      "details details details"
-      "related related related";
-
+  #about{
     background-color: #ffffff;
   }
 
-  .bio {
-    grid-area: bio;
-  }
-
-  .details {
-    grid-area: details;
+  #info {
+    background-color: rgba(241, 156, 156, 0.267);
+    border: 1px solid black;
+    padding: 20px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
   }
 
   .related-links {
+    margin-bottom: 0px;
     grid-area: related;
-    border-bottom: 1px solid #999;
-    padding-bottom: 50px;
+    border-bottom: 1px solid var(--second-color);
+    padding-bottom: 40px;
   }
+
+  .related-links{
+    flex-direction:column;
+      }
+      
+      .related-links a{
+    display:block;
+      }  
+      
+      .related-links li a svg{display:inline-block;}
 }
     
   
