@@ -342,7 +342,25 @@ main.container{
       
       .related-links li a svg{display:inline-block;}
 }
-    
+
+
+@media screen and (min-width:992px){
+  main.container {
+    grid-template-columns:  100% auto;
+    gap:5px;
+    grid-template-areas:
+    "about about"
+    "skills skills"
+    "info info"
+}
+
+img{
+  width: 50%;
+  display:block;
+  margin: 0 auto;
+}
+
+}
   
 
 /*----------------------Edge Case Tweaks-----------------------*/
