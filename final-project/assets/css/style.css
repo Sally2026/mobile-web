@@ -1,4 +1,23 @@
+.container {
+    background-color: #FFB7CB;
+}
+
+
+
 .navbar-brand img{
-    height: 145px;
-    
+    height: 150px;
+}
+
+.nav-item4{
+    background-color: #DE6485;
+}
+
+.bio{
+    background-color: #FFB7CB;
+}
+
+.bio img{
+    height: 400px;
+    width: 400px;
+    background: #ffffff;
 }
