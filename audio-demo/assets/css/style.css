@@ -1,0 +1,29 @@
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+section {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	background-color: #EFEFEF;
+}
+header h1 {
+	background-color: #000;
+	color: #FFF;
+	padding: 8px;
+	text-align: center;
+}
+
+section article {
+	background-color: #FFF;
+	padding: 20px;
+	margin-bottom: 24px;
+}body section article p a {
+	font-size: 14px;
+	color: #252525;
+}
