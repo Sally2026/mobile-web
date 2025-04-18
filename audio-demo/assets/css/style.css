@@ -10,7 +10,7 @@ section {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	background-color: #EFEFEF;
+	background-color: #f4c5c5;
 }
 header h1 {
 	background-color: #000;
@@ -20,7 +20,7 @@ header h1 {
 }
 
 section article {
-	background-color: #FFF;
+	background-color: #f4c5c5;
 	padding: 20px;
 	margin-bottom: 24px;
 }body section article p a {

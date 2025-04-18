@@ -9,16 +9,12 @@
   
   video {
     width: 100%;
-    display: block;
-    
-  }
-  
-  #myVideo {
-
-    border: 2px solid #000000;
-    border-radius: 10px;
+    display: block;;
   }
 
+  body{
+    background:#bde4e8;
+  }
   .controls {
     display: flex;
     flex-wrap: wrap;
