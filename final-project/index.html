@@ -3,102 +3,68 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="portfolio, web designer, web developer">
   <meta name="author" content="Sally Alazab">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/script.js"></script>
 </head>
 
 <body>
-  <header class="navbar bg-body-tertiary">
-    <section class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo5.png" alt="Florafly logo" width="50%" >
-      </a>
-      <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <section class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item4">
-                <a class="nav-link bg-danger-subtle" href="#">PROJECT REQUEST</a>
-              </li>
-            </section>
-        </div>
-      </section>
-  </header>
-  <article class="bio py-5 bg-danger-subtle">
-    <div class="container">
-      <section class="row align-items-center">
-        <div class="col-md-4">
-          <div class="bg-white p-3 shadow">
-          <img src="assets/img/2.jpg" alt="Image of me" class="img-fluid rounded">
-          </div>
-        </div>
-        <div class="col-md-6 ">
-          <h1>Hey, I’m Sally!</h1>
-          <p>The creative mind behind Florafly Design Studio, I blend art and technology to craft stunning, functional websites that leave a lasting impression.</p>
-      </div>
-    </section>
-  </article>
-
-  <article class="mt-5">
-  <section class="container col-xxl-8 px-4 py-5 bg-danger-subtle">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <firgure class="col-10 col-sm-8 col-lg-4">
-        <div class="bg-white p-3 shadow">
-        <img src="assets/img/3.jfif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="200" loading="lazy">
-      </div>
+  <main>
+    <header class="primary">
+      <div class="logo" onclick="window.location.href='index.html'">
+        <fgiure>
+          <img src="assets/img/logo.png" alt="Florafly logo" width="50%">
+          </figure>
+          <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+              &#9776;
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="#about"> About </a></li>
+              <li><a href="#services"> Services </a></li>
+              <li><a href="#portfolio"> Portfolio </a></li>
+              <li><a href="index-form.html"> Project Request </a></li>
+            </ul>
+          </nav>
+    </header>
+    <section id="about">
+      <h1>Hey, I’m Sally!</h1>
+      <p>The creative mind behind Florafly Design Studio, I blend art and technology to craft stunning, functional websites that leave a lasting impression.</p>
+      <firgure>
+        <img src="assets/img/3.jfif" alt="picture of me" width="400" height="200">
       </firgure>
-      <section id="services" class="col-lg-8">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Our Services</h1>
-        <h2>Web Design & Development</h2>
-        <p>Custom, responsive websites that elevate your brand with seamless functionality and stunning design.</p>
-        <h2>Brand Identity & Logo Design</h2>
-        <p>Distinctive logos and branding elements that establish a strong and professional identity.</p>
-        <h2>Print & Digital Design</h2>
-        <p>Eye-catching menus, billboards, and marketing materials designed to enhance your brand’s presence.</p>
-      </section>
-    </div>
-  </section>
-</article>
+    </section>
 
-<section class="container col-xxl-8 px-4 py-5">
-  <div class="row g-4 text-center">
-    <div class="col-md-6 border border-4 border-danger-subtle p-4">
-      <img src="assets/img/1.png" class="rounded img-fluid" alt="Central Park Website">
-    </div>
-    <div class="col-md-6 border border-4 border-danger-subtle p-4">
-      <img src="assets/img/6.png" class="rounded img-fluid" alt="Central Park Website Logo">
-    </div>
-    <div class="col-md-6 border border-4 border-danger-subtle p-4">
-      <img src="assets/img/5.png" class="rounded img-fluid" alt="Triple S Gas Station Menue">
-    </div>
-    <div class="col-md-6 border border-4 border-danger-subtle p-4">
-      <img src="assets/img/7.png" class="rounded img-fluid" alt="Triple S Gas Station Logo">
-    </div>
-  </div>
-</section>
+    <section id="services">
+      <h1>Our Services</h1>
+      <h2>Web Design & Development</h2>
+      <p>Custom, responsive websites that elevate your brand with seamless functionality and stunning design.</p>
+      <h2>Brand Identity & Logo Design</h2>
+      <p>Distinctive logos and branding elements that establish a strong and professional identity.</p>
+      <h2>Print & Digital Design</h2>
+      <p>Eye-catching menus, billboards, and marketing materials designed to enhance your brand’s presence.</p>
+    </section>
 
+    <section id="portfolio">
+      <div class="slider">
+        <div><img src="assets/img/1.png" alt="Central Park Website"></div>
+        <div><img src="assets/img/6.png" alt="Central Park Website Logo"></div>
+        <div><img src="assets/img/5.png" alt="Triple S Gas Station Menue" </div>
+          <div><img src="assets/img/7.png" alt="Triple S Gas Station Logo"></div>
+        </div>
+    </section>
 
-<footer class="footer mt-auto py-3 bg-light border-top">
-  <section class="container d-flex justify-content-between align-items-center">
-    <img src="assets/img/logo5.png" alt="Florafly logo" width="80px">
-    <div id="copyright" class="text-end">
-      <small>&copy; 2025 | Sally Alazab</small>
-    </div>
-  </section>
-</footer>
+    <footer>
+      <img src="assets/img/logo5.png" alt="Florafly logo" width="80px">
+      <h6> &copy; 2025 | Sally Alazab <h6>
+    </footer>
+
 </body>
+</main>
 </html>
