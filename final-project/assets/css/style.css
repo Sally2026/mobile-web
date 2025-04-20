@@ -212,3 +212,23 @@ footer h6{
   margin-right: 120px;
   margin-top: -40px;
 }
+
+.related-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: -60px;
+}
+
+.related-links a {
+  text-decoration: none;
+  font-size: 2em;
+  transition: background-color 0.5s ease;
+  color: var(--second-color)
+}
+
+.related-links .svg-inline--fa {
+  font-size: 1.8em;
+  padding-top: 7px;
+}
+
