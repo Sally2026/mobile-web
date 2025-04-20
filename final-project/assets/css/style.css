@@ -39,7 +39,8 @@ header.primary {
   
 
 header.primary img {
-  height: 70px;
+  width: 100%;
+  max-width: 130px;
   margin: 0;
   padding: 0;
   margin-left: 15px;
@@ -93,7 +94,7 @@ header.primary ul li a {
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  background: var(--first-color);
+  background: #f3cfd9;
 }
 
 .about-left {
@@ -123,12 +124,62 @@ header.primary ul li a {
 }
 
 .about-right p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 20px;
   margin-left: 80px;
   line-height: 2;
 }
  
+
+/*  ---------------Services section-----------------  */
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.services-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.services-left img {
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid var(--primary-typo-color);
+  display: block;
+  margin-right: -250px;
+}
+
+.services-right {
+  background: var(--first-color);
+  padding: 40px;
+  border-radius: 20px;
+  margin-right: 60px;
+}
+
+.services-right h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services-right h2 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.services-right p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 10px;
+}
 
 
 /*  ---------------Slider-----------------  */
@@ -143,4 +194,21 @@ header.primary ul li a {
 .slider{
   overflow: visible;
   position: relative;
+}
+
+/*  ---------------Footer-----------------  */
+
+footer img{
+  width: 100%;
+  max-width: 130px;
+  display: block;
+  align-items: left;
+  margin-left: 20px;
+}
+
+footer h6{
+  text-align: right;
+  margin-bottom: -30px;
+  margin-right: 120px;
+  margin-top: -40px;
 }
