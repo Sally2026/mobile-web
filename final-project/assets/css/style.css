@@ -155,7 +155,9 @@ header.primary ul li a {
   max-width: 350px;
   border: 2px solid var(--primary-typo-color);
   display: block;
-  margin-right: -250px;
+  margin-bottom: 30px;
+  margin-right: -570px;
+  transform: translateX(-50%);
 }
 
 .services-right {
