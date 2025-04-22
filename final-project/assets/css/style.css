@@ -26,7 +26,8 @@ html {
   /*  ---------------Global Styles-----------------  */
 body {
   margin: 0;
-  font-family: "DM Serif Text", serif;
+  font-family: "Inknut Antiqua", serif;
+  font-family: "Inter", sans-serif;
 }
   
 header.primary {
@@ -35,8 +36,9 @@ header.primary {
   justify-content: space-between;
   padding-right: 20px;
   padding-left: 20px;
-}
-  
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+}  
 
 header.primary img {
   width: 100%;
@@ -64,14 +66,12 @@ header.primary ul li a {
   padding: 0;
 }
 
-
 .hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-  
 .request-form{
   background: var(--second-color);
   color: #000000;
@@ -87,8 +87,6 @@ header.primary ul li a {
 }
   
 /*  ---------------About section-----------------  */
-
-
 .about-container {
   display: flex;
   align-items: flex-start;
@@ -118,15 +116,18 @@ header.primary ul li a {
 }
 
 .about-right h1 {
-  font-size: 2.5rem;
-  margin-left: 70px;
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 100px;
   margin-top: 140px;
+  margin-bottom: -20px;
 }
 
 .about-right p {
-  font-size: 1.5rem;
-  margin-top: 20px;
-  margin-left: 80px;
+  font-family:  "Inter", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 150px;
   line-height: 2;
 }
  
@@ -156,31 +157,45 @@ header.primary ul li a {
   border: 2px solid var(--primary-typo-color);
   display: block;
   margin-bottom: 30px;
-  margin-right: -570px;
+  margin-right: -550px;
   transform: translateX(-50%);
 }
 
 .services-right {
   background: var(--first-color);
-  padding: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
   border-radius: 20px;
-  margin-right: 60px;
+  margin-right: 140px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .services-right h1 {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .services-right h2 {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
   font-size: 1.3rem;
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-left: -10px;
 }
 
 .services-right p {
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
-  line-height: 1.8;
-  margin-top: 10px;
+  line-height: 1.5;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  
 }
 
 
