@@ -7,276 +7,585 @@ html {
   box-sizing: inherit;
 }
   
-  /*  --------------- Utility Classes -----------------  */
+/*  --------------- Utility Classes -----------------  */
   
 :root{
-  --main-bg-color: #ffffff;
-  --first-color: #FFB7CB;
-  --second-color: #D45580;
-  --third-color: #FFB7CB;
-  --primary-typo-color: #000000;
+--main-bg-color: #ffffff;
+--first-color: #FFB7CB;
+--second-color: #D45580;
+--third-color: #FFB7CB;
+--primary-typo-color: #000000;
 }
   
 .container {
-  width: 80vw;
-  max-width: 1000px;
-  margin: 20px auto;
+width: 100%;
+max-width: 440px;
+margin: 0 auto;
+overflow-x: hidden;
 }
+
   
-  /*  ---------------Global Styles-----------------  */
+/*  ---------------Global Styles-----------------  */
 body {
-  margin: 0;
-  font-family: "Inknut Antiqua", serif;
-  font-family: "Inter", sans-serif;
+margin: 0;
+font-family: "Inknut Antiqua", serif;
+font-family: "Inter", sans-serif;
 }
-  
+
 header.primary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-family: "Inknut Antiqua", serif;
-  font-weight: 400;
-}  
-
-header.primary img {
-  width: 100%;
-  max-width: 130px;
-  margin: 0;
-  padding: 0;
-  margin-left: 15px;
-}
-
-header.primary ul li a {
-  text-decoration: none;
-  color: var(--primary-typo-color);
+display: flex;
+flex-direction: column;
+font-family: "Inknut Antiqua", serif;
+font-weight: 400;
+margin: 0;
+padding: 0;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
+display: flex;
+justify-content: flex-end;
+margin-right:20px;
 }
-  
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+
+.primary img{
+width: 40%;
+margin-bottom: -300px;
+margin-top: -40px;
+margin-left: -40px;
+display: block;
+}
+
+.navbar {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 10px 20px;
+color: #000000;
 }
 
 .hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
+margin-top: -10px;
+font-size: 2rem;
+cursor: pointer;
+}
+
+.nav-links {
+display: none;
+flex-direction: column;
+gap: 10px;
+background-color: #FFB7CB;
+padding: 10px;
+position: absolute;
+top: 75px;
+right: 1px;
+border: 2px solid black;
+border-radius: 10px;
+z-index: 100;
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.nav-links a {
+text-decoration: none;
+color: var(--primary-typo-color);
+font-size: 1.5rem;
+font-weight: 500;
+transition: color 0.3s ease-in-out;
+}
+
+.main:hover {
+color: var(--second-color);
+}
+
+
+.nav-links li {
+list-style: none;
+text-align: center;
 }
 
 .request-form{
-  background: var(--second-color);
-  color: #000000;
-  padding: 5px 10px;
-  border-radius: 15px;
-  text-decoration: none;
-  border: 2px solid #ffffff;
+background: var(--second-color);
+color: #000000;
+padding: 5px 10px;
+border-radius: 15px;
+text-decoration: none;
+border: 2px solid #ffffff;
 }
 
 .request-form:hover{
-  color: var(--main-bg-color);
-  border: 2px solid #000000;
+color: var(--main-bg-color);
+border: 2px solid #000000;
 }
-  
-/*  ---------------About section-----------------  */
+
+
+/* ------ About Section -------*/
+
+#about{
+padding-bottom: 20px;
+}
+
+.about-container{
+background: var(--second-color);
+}
+
+.about-left{
+padding: 20px 0px;
+margin: 0 auto;
+}
+
+.about-left img{
+margin: 0 auto;
+display: block;
+max-width: 350px;
+border: 2px solid #000000;
+}
+
+.about-right h1{
+margin-left: 40px;
+margin-top: 0;
+margin-bottom: -10px;
+font-family: "Inknut Antiqua", serif;
+font-weight: 700;
+}
+
+.sub p{
+margin-left: 70px;
+font-family: "Charm", cursive;
+font-weight: 400;
+font-size: 1.5rem;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.sub2 p{
+margin-top: 0;
+margin-left: 40px;
+line-height: 1.8;
+font-family: "Inknut Antiqua", serif;
+font-weight: 400;
+font-size: 1rem;
+margin-right: 40px;
+padding-bottom: 20px;
+}
+
+/* ------ Services Section -------*/
+
+.services-container {
+display: grid;
+grid-template-columns: repeat(12,1fr);
+}
+
+.services-left {
+grid-column: 1/4;
+margin-top: 50px;
+}
+
+.services-left img {
+width: 130%;
+border: 2px solid var(--primary-typo-color);
+display: block;
+margin-top: 20px;
+margin-left: 80px;
+transform: translateX(-50%);
+}
+
+.services-right {
+background: var(--first-color);
+grid-column: 4/12;
+grid-row: 1/2;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 10px;
+padding-top: 0px;
+border-radius: 20px;
+margin-bottom: 30px;
+margin-left: 30px;
+}
+
+.services-right h1 {
+font-family: "Inknut Antiqua", serif;
+font-weight: 700;
+font-size: 1rem;
+margin-bottom: -10px;
+}
+
+.services-right h2 {
+font-family: "Inknut Antiqua", serif;
+font-weight: 700;
+font-size: 0.7rem;
+margin-bottom: -10px;
+}
+
+.services-right p {
+font-family: "Inter", sans-serif;
+font-size: 0.6rem;
+line-height: 1.5;
+padding-bottom: -260px;
+}
+
+/* ------ Slider Section -------*/
+
+.slider img {
+align-items: center;
+width: 100%;
+max-width: 310px;
+padding: 10px;
+margin-bottom: 10px;
+border: 10px solid var(--second-color); 
+}
+
+
+/* ------ footer -------*/
+footer {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+footer img {
+width: 130px;
+height: auto;
+margin-left: 20px;
+}
+
+.footer-content {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.footer-content h6 {
+margin: 10px 0;
+font-size: 0.9rem;
+
+}
+
+.related-links {
+display: flex;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin-right: 10px;
+}
+
+.related-links a {
+color: var(--second-color);
+font-size: 1.5rem;
+transition: color 0.3s;
+}
+
+.related-links a:hover {
+color: var(--primary-typo-color);
+}
+
+.footer-line{
+height: 2px;
+border:none;
+background-color: var(--second-color);
+margin:0 auto;
+width: 90%
+}
+
+
+/* ------ Media Queries -------*/
+@media screen and (min-width: 768px) {
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.hamburger{
+  margin-top: -5px;
+}
+
+.nav-links{
+  position: absolute;
+  top: 95px;
+  right: 1px;
+}
+
+.primary img{
+  margin-bottom: -150px;
+  width: 25%;
+}
+
+#about{
+  padding-top: -90px;
+}
+
 .about-container {
   display: flex;
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
   background: #f3cfd9;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .about-left {
   flex: 1;
   display: flex;
-  justify-content: center;
   margin-top: 40px;
-  padding: 20px;
+  margin-left: -20px;
+  justify-content: center;
+  padding-right: 90px;
   background: var(--second-color);
 }
 
 .about-left img {
   display: block;
-  margin-right: -200px;
+  max-width: 370px;
+  margin-right: -180px;
   border: 30px solid var(--main-bg-color);
 }
 
-
 .about-right {
-  flex: 2; 
+  flex: 5; 
 }
 
 .about-right h1 {
   font-family: "Inknut Antiqua", serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-left: 100px;
-  margin-top: 140px;
+  margin-left: 0px;
+  margin-top: 10px;
   margin-bottom: -20px;
 }
 
-.about-right p {
-  font-family:  "Inter", sans-serif;
-  font-size: 1.2rem;
-  margin-left: 150px;
-  line-height: 2;
+.sub{
+  margin-top: 10px;
 }
- 
 
-/*  ---------------Services section-----------------  */
-.services-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.sub2 p {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  line-height: 3;
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right: -10px;
+}
+
+.services-container{
+  margin: 20px;
+
 }
 
 .services-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+  grid-column: 1/4;
+  margin-top: 20px;
   padding: 20px;
 }
 
 .services-left img {
-  width: 100%;
-  max-width: 350px;
+  width: 120%;
+  max-width: 500px;
   border: 2px solid var(--primary-typo-color);
   display: block;
-  margin-bottom: 30px;
-  margin-right: -550px;
+  margin-top: 60px;
+  margin-left: 120px;
   transform: translateX(-50%);
 }
 
 .services-right {
+  grid-column: 4/12;
   background: var(--first-color);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 10px;
   border-radius: 20px;
-  margin-right: 140px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .services-right h1 {
   font-family: "Inknut Antiqua", serif;
   font-weight: 700;
-  font-size: 2rem;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  font-size: 1.5rem;
+  margin-bottom: -10px;
 }
 
 .services-right h2 {
   font-family: "Inknut Antiqua", serif;
   font-weight: 700;
-  font-size: 1.3rem;
-  margin-top: 0px;
-  margin-left: -10px;
+  font-size: 1rem;
+  margin-bottom: -10px;
 }
 
 .services-right p {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  padding-left: 20px;
+  padding-bottom: -260px;
+}
+
+.footer-line{
+  height: 2px;
+  border:none;
+  background-color: var(--second-color);
+  margin:0 auto;
+  width: 90%
+}
+
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header.primary {
+    display: flex !important;
+    justify-content: space-between;
+    margin:0; 
+    padding: 0;
+  }
+
+  header.primary img {
+    width: 100%;
+    max-width: 140px;
+    margin-top: -18px;
+    margin-bottom: -40px;
+    margin-left: -15px;
+  }
   
-}
-
-
-/*  ---------------Slider-----------------  */
-.slider img {
-  align-items: center;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 10px;
-  border: 10px solid var(--second-color);
-}
-
-.slider{
-  overflow: visible;
-  position: relative;
-}
-
-/*  ---------------Footer-----------------  */
-
-footer {
-
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer img {
-  width: 100%;
-  max-width: 120px;
-  display: block;
-  align-items: left;
-  margin-left: 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  gap: 20px;
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   
-}
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    background: none;
+    border: none;
+    margin-top: -85px;
+    font-size: 0.5rem;
+  }
 
-.footer-content h6 {
-  margin: 0;
-  font-size: 1rem;
-  font-family: "Inknut Antiqua", serif;
-  font-weight: 700;
-}
+  .nav-links li a{
+    font-size: 1.2rem;
+  }
 
-.related-links {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  .main:hover{
+    color:var(--second-color);
+  }
 
-.related-links a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
+  .request-form:hover{
+    color: var(--main-bg-color);
+    border: 2px solid #000000;
+  }
 
-/* ------ Media Queries -------*/
+  .hamburger {
+    display: none;
+  }
 
-@media screen and (min-width: 768px) {
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--second-color);
+  }
+  
+  .about-left img {
+    display: block;
+    max-width: 390px;
+    margin-right: -200px;
+    border: 30px solid var(--main-bg-color);
+  }
+  
+  
+  .about-right {
+    flex: 2; 
+  }
+  
+  .about-right h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 140px;
+    margin-bottom: -20px;
+  }
+  
+  .sub{
+    font-family:  "Inter", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 150px;
+    line-height: 2;
+  }
 
+  .sub2{
+    font-size: 1.2rem;
+    margin-left: 150px;
+    line-height: 2;
+  }
 
+  .services-left {
+    grid-column: 1/4;
+    margin-top: 40px;
+  }
+  
+  .services-left img {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid var(--primary-typo-color);
+    display: block;
+    margin-top: 40px;
+    margin-left: 200px;
+    transform: translateX(-50%);
+  }
+  
+  .services-right {
+    grid-column: 4/12;
+    background: var(--first-color);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+   
+  }
+  
+  .services-right h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .services-right h2 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0px;
+    margin-left: -10px;
+  }
+  
+  .services-right p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
 
-
-
-
-
-
-
-}
-
-
-
-@media screen and (min-width:992px){
+  .footer-line{
+    height: 2px;
+    border:none;
+    background-color: var(--second-color);
+    margin:0 auto;
+    width: 90%
+  }
 }
