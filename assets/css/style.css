@@ -70,6 +70,11 @@ main{
   color: var(--primary-color);
 }
 
+.content h2{
+  border-bottom: 4px  double var(--border-color);
+  padding-bottom: 10px;
+}
+
 /*---------------- Media Queries ----------------*/
 
 @media screen and (max-width:600px){
