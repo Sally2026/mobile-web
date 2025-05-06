@@ -587,3 +587,15 @@ footer img {
     transform: translateX(-50%);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .services-left img {
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid var(--primary-typo-color);
+    display: block;
+    margin-top: -5px;
+    margin-left: 250px;
+    transform: translateX(-50%);
+  }
+}
